@@ -8,8 +8,7 @@ SELECT testimonials.id , writer.name AS writer, recipient.name AS recipient ,tes
 
 -- QUESTÃO 3 ----------------------------
 
-SELECT users.id , users.name , courses.name AS course , schools.name AS school , ed."endDate" AS endDate FROM users JOIN educations ed ON users.id = ed."userId" JOIN courses ON ed."courseId" = courses.id JOIN schools ON ed."schoolId" = schools.id WHERE users.id = 30;
+SELECT users.id , users.name , courses.name AS course , schools.name AS school , ed."endDate" AS endDate FROM users JOIN educations ed ON users.id = ed."userId" JOIN courses ON ed."courseId" = courses.id JOIN schools ON ed."schoolId" = schools.id WHERE users.id = 30 AND ed.status='finished';
 
 -- QUESTÃO 4 ----------------------------
-
 
