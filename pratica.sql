@@ -1,0 +1,1 @@
+SELECT cities.id FROM cities WHERE name="Rio de Janeiro"
