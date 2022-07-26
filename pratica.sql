@@ -12,3 +12,4 @@ SELECT users.id , users.name , courses.name AS course , schools.name AS school ,
 
 -- QUESTÃO 4 ----------------------------
 
+SELECT users.id , users.name , roles.name AS role , companies.name AS company , expe."startDate" AS startDate FROM users JOIN experiences expe ON users.id = expe."userId" JOIN roles ON expe."roleId" = roles.id JOIN companies ON expe."companyId" = companies.id WHERE users.id = 50 AND expe."endDate" IS NULL;
